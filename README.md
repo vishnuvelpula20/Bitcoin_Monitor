@@ -2,16 +2,10 @@
 
 Batch Processing
 Bitcoin Monitor
-This is an ETL pipeline to pull bitcoin exchange data from CoinCap API and load it into our data warehouse.
-* [Bitcoin Monitor](#bitcoin-monitor)
-    * [Run Data Pipeline](#run-data-pipeline)
-    * [Architecture](#architecture)
+This ETL pipeline pulls Bitcoin exchange data from CoinCap API and loads it into our data warehouse.
 
-# Bitcoin Monitor
-
-This is an ETL pipeline to pull bitcoin exchange data from [CoinCap API](https://docs.coincap.io/) and load it into our data warehouse.
 ## Architecture
-We use python to pull, transform and load data. Our warehouse is postgres. We also spin up a Metabase instance for our presentation layer.
+We use Python to pull, transform, and load data. Our warehouse is Postgres. We also spin up a Metabase instance for our presentation layer.
 All of the components are running as docker containers.
 Architecture:
 
